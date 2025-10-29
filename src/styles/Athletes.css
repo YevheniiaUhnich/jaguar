@@ -1,0 +1,180 @@
+:root{
+  --g0: rgb(236,232,232);
+  --g1: rgb(221,217,217);
+  --g2: rgb(190,186,186);
+  --blur: 12px;          /* сила блюру */
+}
+
+.athletes {
+  background-color: rgba(221, 217, 217, 0.3);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.athletes::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(221, 217, 217, 0.2) 0%,
+    rgba(221, 217, 217, 0.35) 50%,
+    rgba(221, 217, 217, 0.25) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+
+}
+
+
+.athletes > *{ position: relative; z-index: 2; }
+
+.athletes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.athlete-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(233, 196, 106, 0.3); 
+}
+
+.athlete-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  border-color: #E9C46A; 
+}
+
+.athlete-image {
+  width: 100%;
+  position: relative;
+}
+
+.athlete-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.athlete-card:hover .athlete-photo {
+  transform: scale(1.05);
+}
+
+.placeholder-image {
+  width: 100%;
+  height: 250px;
+  background-color: #F0F0F0; /* Світло-сірий */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #333333; /* Темно-сіра рамка */
+}
+
+.placeholder-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(58, 107, 53, 0.05) 0%, rgba(233, 196, 106, 0.1) 100%);
+  z-index: 1;
+}
+
+.athlete-info {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.athlete-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #3A6B35 0%, #E9C46A 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.athlete-card:hover .athlete-info::before {
+  opacity: 1;
+}
+
+.athlete-name {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #2E4D2E; /* Темно-зелений */
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.athlete-position {
+  font-size: 1rem;
+  color: #3A6B35; /* М'який зелений */
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.athlete-birthdate {
+  font-size: 0.9rem;
+  color: #666666; /* Сірий */
+  font-style: italic;
+  border-top: 1px dashed rgba(233, 196, 106, 0.3); /* Пунктирна жовта лінія */
+  padding-top: 8px;
+  margin-top: 5px;
+}
+
+/* Адаптивний дизайн */
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .athletes {
+    padding: 60px 0;
+  }
+  
+  .athletes-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .placeholder-image,
+  .athlete-photo {
+    height: 200px;
+  }
+}
+
+/* Планшети (від 768px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .athletes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .placeholder-image,
+  .athlete-photo {
+    height: 220px;
+  }
+}
+
+/* Великі планшети та малі десктопи (від 1025px до 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .athletes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

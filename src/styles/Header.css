@@ -1,0 +1,108 @@
+/* Стилі для хедера */
+.header {
+  padding: 20px 0;
+  background-color: #3A6B35; 
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E9C46A;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item a {
+  color: #E9C46A;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #E9C46A; /* Золотисто-жовтий при наведенні */
+}
+
+.mobile-menu-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.mobile-menu-button span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #E9C46A; /* Золотисто-жовтий для рисочки */
+  border-radius: 3px;
+  z-index: 1;
+}
+
+/* Адаптивний дизайн */
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+  
+  .mobile-menu-button {
+    display: flex;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+  
+  .logo-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Планшети (від 768px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-list {
+    gap: 15px;
+  }
+  
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+}

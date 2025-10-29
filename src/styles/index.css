@@ -1,0 +1,101 @@
+:root{
+  --tile-w: 320px;      
+  --tile-h: calc(var(--tile-w) * 0.962); 
+  --off-x: 80px;
+  --off-y: 0px;
+}
+
+
+html{
+  background: var(--cream);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #F9F7F0;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before{
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background:
+    url('Logo-gap40.webp') var(--off-x) var(--off-y) /
+      var(--tile-w) var(--tile-h) repeat,
+    url('Logo-gap40.webp') calc(var(--off-x) + var(--tile-w)/2)
+      calc(var(--off-y) + var(--tile-h)/2) /
+      var(--tile-w) var(--tile-h) repeat;
+  opacity: 0.15;
+  filter: blur(2px);
+  transform: rotate(-30deg);
+  transform-origin: center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* контент поверх */
+body > *{ position: relative; z-index: 1; }
+
+/* М'яка вуаль для читабельності */
+body::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(249,247,240,0.20) 0%,
+    rgba(249,247,240,0.20) 50%,
+    rgba(249,247,240,0.20) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Опційно легкий шум */
+.background-noise{
+  position: absolute;
+  inset: 0;
+  /* background-image: url('/img/noise-2x.webp'); */
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Базова сітка */
+img{ max-width: 100%; height: auto; display: block; }
+.container{ width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+section{ padding: 60px 0; }
+
+/* Адаптивність */
+@media (max-width: 768px){
+  section{ padding: 40px 0; }
+  .container{ padding: 0 15px; }
+
+  /* підсилюємо вуаль щоб фон менше відволікав */
+  body::after{
+    background: linear-gradient(
+      180deg,
+      rgba(249,247,240,0.82) 0%,
+      rgba(249,247,240,0.70) 50%,
+      rgba(249,247,240,0.80) 100%
+    );
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+  section{ padding: 50px 0; }
+}
+
+@media (min-width: 1025px){
+  section{ padding: 60px 0; }
+}

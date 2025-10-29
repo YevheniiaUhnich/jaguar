@@ -1,0 +1,135 @@
+/* Стилі для секції Location */
+.location {
+  padding: 80px 0;
+  
+  position: relative;
+}
+
+.location::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #3A6B35, #E9C46A);
+}
+
+.location-content {
+  display: flex;
+  gap: 40px;
+}
+
+.location-map {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 3px solid #E9C46A; /* Золотисто-жовта рамка */
+}
+
+.placeholder-map {
+  width: 100%;
+  height: 400px;
+  background-color: #F0F0F0; /* Світло-сірий */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.placeholder-map::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(58, 107, 53, 0.05) 0%, rgba(233, 196, 106, 0.1) 100%);
+}
+
+.location-info {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  border-left: 4px solid #3A6B35; /* Зелена бокова лінія */
+}
+
+.info-item {
+  margin-top: 40px;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #2E4D2E; /* Темно-зелений */
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.info-item h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #E9C46A; 
+ 
+}
+
+.info-item p {
+  margin-bottom: 8px;
+  color: #4A4A4A; /* Середньо-сірий */
+  line-height: 1.6;
+  position: relative;
+  padding-left: 20px;
+  
+}
+
+.info-item p::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #3A6B35; /* М'який зелений */
+}
+
+/* Мобільні пристрої (до 768px) */
+@media (max-width: 768px) {
+  .location {
+    padding: 60px 0;
+  }
+  
+  .location-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .placeholder-map {
+    height: 250px;
+  }
+  
+  .location-info {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Планшети (від 768px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .location-content {
+    gap: 30px;
+  }
+  
+  .placeholder-map {
+    height: 350px;
+  }
+}
