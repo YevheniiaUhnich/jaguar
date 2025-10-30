@@ -1,6 +1,5 @@
-/* Стилі для Footer */
 .footer {
-  background-color: #2E4D2E; /* Темно-зелений */
+  background-color: #2E4D2E; 
   color: #fff;
   padding: 50px 0 40px;
   position: relative;
@@ -44,7 +43,7 @@
   position: relative;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: #E9C46A; /* Золотисто-жовтий */
+  color: #E9C46A; 
 }
 
 .footer-links-column h3::after {
@@ -54,7 +53,7 @@
   left: 0;
   width: 40px;
   height: 2px;
-  background-color: #E9C46A; /* Золотисто-жовтий */
+  background-color: #E9C46A; 
 }
 
 .footer-links-column ul {
@@ -66,7 +65,7 @@
 }
 
 .footer-links-column ul li a {
-  color: #F0F0F0; /* Світло-сірий */
+  color: #F0F0F0; 
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
@@ -77,14 +76,14 @@
   content: '→';
   position: absolute;
   left: 0;
-  color: #E9C46A; /* Золотисто-жовтий */
+  color: #E9C46A; 
   opacity: 0;
   transform: translateX(-5px);
   transition: all 0.3s ease;
 }
 
 .footer-links-column ul li a:hover {
-  color: #E9C46A; /* Золотисто-жовтий */
+  color: #E9C46A; 
   padding-left: 20px;
 }
 
@@ -94,7 +93,7 @@
 }
 
 .footer-links-column ul li a:hover {
-  color: #333333; /* Темно-сірий замість синього */
+  color: #333333; 
 }
 
 .social-links {
@@ -105,12 +104,12 @@
 .social-links a {
   display: inline-block;
   margin-right: 15px;
-  color: #F0F0F0; /* Світло-сірий */
+  color: #F0F0F0; 
   font-size: 1.3rem;
   transition: all 0.3s ease;
   width: 36px;
   height: 36px;
-  background-color: rgba(233, 196, 106, 0.2); /* Напівпрозорий жовтий */
+  background-color: rgba(233, 196, 106, 0.2); 
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -118,13 +117,13 @@
 }
 
 .social-links a:hover {
-  color: #2E4D2E; /* Темно-зелений */
-  background-color: #E9C46A; /* Золотисто-жовтий */
+  color: #2E4D2E; 
+  background-color: #E9C46A;
   transform: translateY(-3px);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(233, 196, 106, 0.3); /* Напівпрозора жовта лінія */
+  border-top: 1px solid rgba(233, 196, 106, 0.3); 
   padding-top: 25px;
   text-align: center;
   margin-top: 40px;
@@ -132,12 +131,10 @@
 }
 
 .footer-bottom p {
-  color: #f0f0f0; /* Світло-сірий замість світло-синього */
+  color: #f0f0f0; 
   font-size: 0.9rem;
 }
 
-/* Адаптивний дизайн */
-/* Мобільні пристрої (до 768px) */
 @media (max-width: 768px) {
   .footer {
     padding: 40px 0 20px;
@@ -152,9 +149,25 @@
     flex-direction: column;
     gap: 30px;
   }
+  .footer,
+  .footer-content,
+  .footer-links,
+  .footer-links-column,
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-content { align-items: center; }
+  .footer-links { align-items: center; }
+
+  .footer-links-column h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  
 }
 
-/* Планшети (від 768px до 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer-content {
     flex-wrap: wrap;

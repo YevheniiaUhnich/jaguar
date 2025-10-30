@@ -8,8 +8,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
+        <div className="logo">
+            <img src="/imageFon.png" alt="Логотип" className="logo-img" />
+            <h1>ХК "Ягуари"</h1>
+            
+          </div>
           <div className="footer-logo">
-            <h2>ХК "Ягуари"</h2>
+        
             <p>Досягайте нових висот разом з нами</p>
           </div>
           <div className="footer-links">
