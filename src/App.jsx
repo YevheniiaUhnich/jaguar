@@ -8,6 +8,7 @@ import Location from './components/Location'
 import Footer from './components/Footer'
 import './styles/App.css'
 import Translation from './components/Translation'
+import News from './components/News'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <Coach />
         <Athletes />
+        <News />
         <Translation />
         <Gallery />
         <Location />

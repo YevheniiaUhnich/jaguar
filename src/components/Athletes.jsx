@@ -4,7 +4,7 @@ import '../styles/Athletes.css'
 const Athletes = () => {
 
   const athletesData = [
-    { id: 1, name: 'Тулінов Двніїл', position: '...', birthDate: '24.02.2013', photo: '/athletes/Tulinov.jpg' },
+    { id: 1, name: 'Тулінов Даніїл', position: '...', birthDate: '24.02.2013', photo: '/athletes/Tulinov.jpg' },
     { id: 2, name: 'Дашко Семен', position: 'Захисник', birthDate: '28.01.2014', photo: '/athletes/Dashko.jpg' },
     { id: 3, name: 'Аболмасов Марко', position: 'Захисник', birthDate: '19.08.2014', photo: '/athletes/Abolmasov.jpg' },
     { id: 4, name: 'Торубара Ілона', position: 'Нападник', birthDate: '20.12.2012', photo: '/athletes/TorubaraI.jpg' },

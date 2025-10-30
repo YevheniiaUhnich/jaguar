@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="footer-links-column">
               <h3>Соціальні мережі</h3>
               <ul className="social-links">
-                <li><a href="#">Facebook</a></li>
+                <li><a href="https://www.facebook.com/groups/1280780848954295/">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>
                 <li><a href="#">YouTube</a></li>
                 <li><a href="#">Telegram</a></li>
