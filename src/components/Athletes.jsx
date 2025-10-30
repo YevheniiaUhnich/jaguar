@@ -6,7 +6,7 @@ const Athletes = () => {
   const athletesData = [
     { id: 1, name: 'Тулінов Двніїл', position: '...', birthDate: '24.02.2013', photo: '/athletes/Tulinov.jpg' },
     { id: 2, name: 'Дашко Семен', position: 'Захисник', birthDate: '28.01.2014', photo: '/athletes/Dashko.jpg' },
-    { id: 3, name: 'Аболмасов Марко', position: 'Захисник', birthDate: '19.18.2014', photo: '/athletes/Abolmasov.jpg' },
+    { id: 3, name: 'Аболмасов Марко', position: 'Захисник', birthDate: '19.08.2014', photo: '/athletes/Abolmasov.jpg' },
     { id: 4, name: 'Торубара Ілона', position: 'Нападник', birthDate: '20.12.2012', photo: '/athletes/TorubaraI.jpg' },
     { id: 5, name: 'Штепа Лія', position: '...', birthDate: '14.05.2012', photo: '/athletes/ShtepaL.jpg' },
     { id: 6, name: 'Клюшник Катерина', position: '...', birthDate: '14.01.2012', photo: '/athletes/KliushnykK.jpg' },

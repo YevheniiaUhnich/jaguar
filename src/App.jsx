@@ -7,6 +7,7 @@ import Gallery from './components/Gallery'
 import Location from './components/Location'
 import Footer from './components/Footer'
 import './styles/App.css'
+import Translation from './components/Translation'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Coach />
         <Athletes />
+        <Translation />
         <Gallery />
         <Location />
       </main>
