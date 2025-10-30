@@ -30,15 +30,15 @@ body::before {
   overflow-y: auto;
   inset: 0;
   background:
-    url('Logo-gap40.webp') var(--off-x) var(--off-y) / var(--tile-w) var(--tile-h) repeat,
-    url('Logo-gap40.webp') calc(var(--off-x) + var(--tile-w)/2) calc(var(--off-y) + var(--tile-h)/2) / var(--tile-w) var(--tile-h) repeat;
+    url('/public/Logo-gap40.webp') var(--off-x) var(--off-y) / var(--tile-w) var(--tile-h) repeat,
+    url('/public/Logo-gap40.webp') calc(var(--off-x) + var(--tile-w)/2) calc(var(--off-y) + var(--tile-h)/2) / var(--tile-w) var(--tile-h) repeat;
   opacity: 0.15;
   filter: blur(2px);
   transform: rotate(-30deg);
   transform-origin: center center;
   z-index: 0;
   pointer-events: none;
-  top: -100%; 
+  top: -100%;
   left: -100%;
   right: -100%;
   bottom: -100%;
@@ -46,13 +46,13 @@ body::before {
   height: 300%;
 }
 
-/* контент поверх */
+
 body>* {
   position: relative;
   z-index: 1;
 }
 
-/* М'яка вуаль для читабельності */
+
 body::after {
   content: '';
   position: absolute;
@@ -68,17 +68,16 @@ body::after {
   z-index: 0;
 }
 
-/* Опційно легкий шум */
+
 .background-noise {
   position: absolute;
   inset: 0;
-  /* background-image: url('/img/noise-2x.webp'); */
   opacity: 0.08;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Базова сітка */
+
 img {
   max-width: 100%;
   height: auto;
@@ -97,7 +96,7 @@ section {
   padding: 60px 0;
 }
 
-/* Адаптивність */
+
 @media (max-width: 768px) {
   section {
     padding: 40px 0;
@@ -107,14 +106,14 @@ section {
     padding: 0 15px;
   }
 
-  body::before{
+  body::before {
     width: 250%;
     height: 250%;
     top: -75%;
     left: -75%;
   }
 
-  /* підсилюємо вуаль щоб фон менше відволікав */
+
   body::after {
     background: linear-gradient(180deg,
         rgba(249, 247, 240, 0.82) 0%,
