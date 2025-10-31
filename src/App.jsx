@@ -1,32 +1,27 @@
-import React from 'react'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Coach from './components/Coach'
-import Athletes from './components/Athletes'
-import Gallery from './components/Gallery'
-import Location from './components/Location'
-import Footer from './components/Footer'
-import './styles/App.css'
-import Translation from './components/Translation'
-import News from './components/News'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import Home from './pages/Home';
+
+import AthletesPage from './pages/AthletesPage';
+import './styles/App.css';
+
+export default function App() {
   return (
     <div className="app">
       <Header />
-      <main>
-        <Hero />
-        <Coach />
-        <Athletes />
-        <News />
-        <Translation />
-        <Gallery />
-        <Location />
-      </main>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/players/:slug" element={<AthletesPage />} />
       
+         {/* <Route path="*" element={<NotFound />} />  */}
+      </Routes>
+
       <Footer />
     </div>
-  )
+  );
 }
-
-export default App

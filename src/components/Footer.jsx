@@ -8,15 +8,16 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-        <div className="logo">
-            <img src="/imageFon.png" alt="Логотип" className="logo-img" />
-            <h1>ХК "Ягуари"</h1>
-            
+
+          <div className="footer-brand">
+
+            <div className="brand-row">
+              <img src="/imageFon.png" alt="Логотип" className="brand-logo-img" />
+              <h1 className="brand-title">ХК "Ягуари"</h1>
+            </div>
+            <p className="brand-subtitle">Досягайте нових висот разом з нами</p>
           </div>
-          <div className="footer-logo">
-        
-            <p>Досягайте нових висот разом з нами</p>
-          </div>
+
           <div className="footer-links">
             <div className="footer-links-column">
               <h3>Навігація</h3>
