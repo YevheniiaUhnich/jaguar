@@ -11,6 +11,7 @@ const rawPlayers = [
         position: 'нападник',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         videos: '',
     },
@@ -26,8 +27,18 @@ const rawPlayers = [
         position: 'захисник',
         weightKg: 48,
         heightCm: 160,
+        stick: 'right',
         history: '...',
         videos: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '3-p',
@@ -41,11 +52,21 @@ const rawPlayers = [
         position: 'захисник',
         weightKg: 33,
         heightCm: 150,
+        stick: 'right',
         history: '...',
         videos: [
             { src: '/video-athletes/BulitAbolmasov.mp4', poster: '/video-athletes/posterAbolmasov1.jpg' },
-            { src: '/video-athletes/BulitAbolmasov.mp4' },
-          ]
+            { src: '/video-athletes/BulitAbolmasov2.mp4', poster: '/video-athletes/posterAbolmasov2.jpg'},
+          ],
+
+          stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '4-p',
@@ -56,14 +77,24 @@ const rawPlayers = [
         patronymic: 'Дмитрівна',
         birthdate: '20.12.2012',
         number: 88,
-        position: 'захисник',
+        position: 'нападник',
         weightKg: 57,
         heightCm: 163,
+        stick: 'left',
         history: '...',
         videos: [
             {src: '/video-athletes/BulitTorubara.mp4', poster: '/video-athletes/posterTorubara2.jpg'},
             {src: '/video-athletes/BulitTorubara2.mp4', poster: '/video-athletes/posterTorubara1.jpg'}
         ],
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '5-p',
@@ -77,8 +108,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '6-p',
@@ -92,8 +133,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '7-p',
@@ -107,8 +158,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '8-p',
@@ -122,8 +183,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '9-p',
@@ -137,8 +208,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '10-p',
@@ -152,8 +233,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '11-p',
@@ -167,8 +258,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '12-p',
@@ -182,8 +283,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '13-p',
@@ -197,8 +308,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '14-p',
@@ -212,8 +333,18 @@ const rawPlayers = [
         position: 'воротар',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '15-p',
@@ -227,8 +358,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '16-p',
@@ -242,8 +383,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '17-p',
@@ -257,8 +408,18 @@ const rawPlayers = [
         position: 'воротар',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '18-p',
@@ -272,8 +433,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '19-p',
@@ -287,8 +458,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '20-p',
@@ -302,8 +483,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '21-p',
@@ -317,8 +508,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '22-p',
@@ -332,8 +533,18 @@ const rawPlayers = [
         position: '',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
     {
         id: '23-p',
@@ -347,8 +558,18 @@ const rawPlayers = [
         position: 'воротар',
         weightKg: 11,
         heightCm: 11,
+        stick: '',
         history: '...',
         video: '',
+
+        stats: {
+            regular: [
+              { season: '2022-2023', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2023-2024', club: 'Ягуари', league: 'ЧУ U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2024-2025', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+              { season: '2025-2026', club: 'Ягуари', league: 'Еліт-ліга U13', games: 0, goals: 0, assists: 0, pim: 0 },
+            ]
+          }
     },
 
 ]
@@ -361,6 +582,7 @@ const DEFAULTS = {
     position: '',
     weightKg: null,
     heightCm: null,
+    stick: '',
     history: '',
     video: [],
   };

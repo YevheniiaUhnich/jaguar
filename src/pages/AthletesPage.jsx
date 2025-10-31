@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { players } from '../data/players.js';
 import '../styles/AthletesPage.css';
+import PlayerStats from '../components/PlayerStats.jsx';
 
 export default function AthletesPage() {
   const { slug } = useParams();
@@ -38,6 +39,7 @@ export default function AthletesPage() {
               <div><span>Зріст:</span> {p.heightCm} см</div>
               <div><span>Вага:</span> {p.weightKg} кг</div>
               <div><span>Номер:</span> {p.number}</div>
+              <div><span>Хват:</span>{p.stick}</div>
             </div>
             {p.videos.length > 0 && (
               <section className="player-videos">
@@ -59,6 +61,7 @@ export default function AthletesPage() {
             )}
           </div>
         </div>
+        {p.stats?.regular?.length > 0 && <PlayerStats rows={p.stats.regular} />}
       </div>
     </section>
   );
