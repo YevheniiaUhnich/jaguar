@@ -81,7 +81,7 @@ const rawPlayers = [
         weightKg: 57,
         heightCm: 163,
         stick: 'left',
-        history: '...',
+        history: 'Вона — не просто нападниця, а справжній хижак льоду: швидка, рішуча, з поглядом, що бачить шайбу ще до її руху. У формі «Ягуарів» вона несе в собі дух українських крил — горду, незламну силу, яка прорізає лід, як буря.',
         videos: [
             {src: '/video-athletes/BulitTorubara.mp4', poster: '/video-athletes/posterTorubara2.jpg'},
             {src: '/video-athletes/BulitTorubara2.mp4', poster: '/video-athletes/posterTorubara1.jpg'}

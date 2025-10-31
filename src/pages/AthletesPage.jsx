@@ -40,6 +40,7 @@ export default function AthletesPage() {
               <div><span>Вага:</span> {p.weightKg} кг</div>
               <div><span>Номер:</span> {p.number}</div>
               <div><span>Хват:</span>{p.stick}</div>
+              <div>{p.history}</div>
             </div>
             {p.videos.length > 0 && (
               <section className="player-videos">
