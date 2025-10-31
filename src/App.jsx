@@ -8,6 +8,8 @@ import Home from './pages/Home';
 
 import AthletesPage from './pages/AthletesPage';
 import './styles/App.css';
+import ScrollTopButton from './components/ScrollTopButton';
+import './styles/ScrollTop.css';
 
 export default function App() {
   return (
@@ -17,10 +19,11 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/players/:slug" element={<AthletesPage />} />
-      
-         {/* <Route path="*" element={<NotFound />} />  */}
+
+        {/* <Route path="*" element={<NotFound />} />  */}
       </Routes>
 
+      <ScrollTopButton />
       <Footer />
     </div>
   );
