@@ -37,7 +37,7 @@ function NewsCard({ item }) {
 
 
   return (
-    <article className="news-card">
+    <article id='news' className="container news-card">
       <a className="news-link" href={item.url} target="_blank" rel="noopener noreferrer">
         <div className="news-media">
         {isVideo ? (

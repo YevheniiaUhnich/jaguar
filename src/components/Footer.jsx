@@ -25,6 +25,7 @@ const Footer = () => {
                 <li><a href="#hero">Головна</a></li>
                 <li><a href="#coach">Тренер</a></li>
                 <li><a href="#athletes">Спортсмени</a></li>
+                <li><a href="#news">Новини</a></li>
                 <li><a href="#gallery">Галерея</a></li>
                 <li><a href="#video">Трансляції</a></li>
                 <li><a href="#location">Локація</a></li>

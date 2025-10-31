@@ -1,7 +1,7 @@
-/* Стилі для хедера */
+
 .header {
   padding: 20px 0;
-  background-color: #3A6B35; 
+  background-color: #3A6B35;
   color: white;
   position: fixed;
   width: 100%;
@@ -52,15 +52,15 @@
 }
 
 .nav-item a:hover {
-  color: #E9C46A; /* Золотисто-жовтий при наведенні */
+  color: #E9C46A;
 }
 
 .mobile-menu-button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  width: 40px;
+  height: 31px;
   cursor: pointer;
 }
 
@@ -70,38 +70,134 @@
   height: 3px;
   margin-bottom: 5px;
   position: relative;
-  background-color: #E9C46A; /* Золотисто-жовтий для рисочки */
+  background-color: #E9C46A;
   border-radius: 3px;
   z-index: 1;
 }
 
-/* Адаптивний дизайн */
-/* Мобільні пристрої (до 768px) */
+.burger-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(233, 196, 106, .5);
+  border-radius: 50%;
+  background: #2E4D2E;
+  color: #E9C46A;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.burger-btn:focus-visible {
+  outline: 2px solid #E9C46A;
+  outline-offset: 2px;
+}
+
+.mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .45);
+  z-index: 999;
+  display: none;
+  /* сховано за замовчуванням */
+}
+
+.mobile-overlay[data-visible="true"] {
+  display: block;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(82vw, 340px);
+  background: #2E4D2E;
+  color: #F0F0F0;
+  border-left: 1px solid rgba(233, 196, 106, .35);
+  transform: translateX(100%);
+  /* сховано за замовчуванням */
+  transition: transform .25s ease;
+  z-index: 1000;
+  padding: 16px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-nav[data-open="true"] {
+  transform: translateX(0);
+}
+
+.close-btn {
+  align-self: flex-end;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(233, 196, 106, .5);
+  background: rgba(233, 196, 106, .15);
+  color: #E9C46A;
+  cursor: pointer;
+}
+
+
+.mobile-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-list a {
+  display: block;
+  padding: 12px 10px;
+  border-radius: 10px;
+  color: #F0F0F0;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.mobile-list a:hover {
+  background: rgba(233, 196, 106, .12);
+  border-color: rgba(233, 196, 106, .35);
+  color: #E9C46A;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .navigation {
     display: none;
   }
-  
+
   .mobile-menu-button {
     display: flex;
   }
-  
+
   .logo h1 {
     font-size: 1.2rem;
   }
-  
+
   .logo-img {
     width: 40px;
     height: 40px;
   }
+
+  .burger-btn {
+    display: flex;
+  }
 }
 
-/* Планшети (від 768px до 1024px) */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .nav-list {
     gap: 15px;
   }
-  
+
   .logo h1 {
     font-size: 1.3rem;
   }

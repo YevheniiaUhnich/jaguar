@@ -42,7 +42,7 @@
 @media (max-width: 768px) {
     .scroll-top {
         right: 16px;
-        top: calc(160px + env(safe-area-inset-top));
+        top: calc(360px + env(safe-area-inset-top));
         width: 44px;
         height: 44px;
     }
