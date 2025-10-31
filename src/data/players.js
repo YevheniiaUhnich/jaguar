@@ -53,7 +53,7 @@ const rawPlayers = [
         weightKg: 33,
         heightCm: 150,
         stick: 'right',
-        history: '...',
+        history: 'Наймолодший у команді, але з серцем справжнього воїна - він грає в захисті так, ніби кожна шайба летить у його власну домівку. Йому байдуже, хто перед ним - старші, сильніші чи швидші - він стоїть, як стіна, і намагається не пропускати нікого.',
         videos: [
             { src: '/video-athletes/BulitAbolmasov.mp4', poster: '/video-athletes/posterAbolmasov1.jpg' },
             { src: '/video-athletes/BulitAbolmasov2.mp4', poster: '/video-athletes/posterAbolmasov2.jpg'},
