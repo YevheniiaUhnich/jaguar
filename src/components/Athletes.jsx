@@ -31,7 +31,8 @@ export default function Athletes () {
               </Link>
 
               <div className="athlete-info">
-                <h3 className="athlete-name">{player.name}</h3>
+              <h3 className="athlete-name">{player.surname} {player.name}</h3>
+
                 <p className="athlete-position">{player.position}</p>
                 <p className="athlete-birthdate">
                   Дата народження: {player.birthdate ? new Date(player.birthdate).toLocaleDateString('uk-UA') : '—'}

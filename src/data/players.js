@@ -43,9 +43,9 @@ const rawPlayers = [
         heightCm: 150,
         history: '...',
         videos: [
-            {src: '/video-athletes/BulitAbolmasov.mp4'},
-            {src: '/video-athletes/BulitAbolmasov.mp4'}
-        ],
+            { src: '/video-athletes/BulitAbolmasov.mp4', poster: '/video-athletes/posterAbolmasov1.jpg' },
+            { src: '/video-athletes/BulitAbolmasov.mp4' },
+          ]
     },
     {
         id: '4-p',
@@ -60,7 +60,10 @@ const rawPlayers = [
         weightKg: 57,
         heightCm: 163,
         history: '...',
-        video: '',
+        videos: [
+            {src: '/video-athletes/BulitTorubara.mp4', poster: '/video-athletes/posterTorubara2.jpg'},
+            {src: '/video-athletes/BulitTorubara2.mp4', poster: '/video-athletes/posterTorubara1.jpg'}
+        ],
     },
     {
         id: '5-p',
