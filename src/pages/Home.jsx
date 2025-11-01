@@ -6,7 +6,9 @@ import Hero from "../components/Hero";
 import Location from "../components/Location";
 import News from "../components/News";
 import Translation from "../components/Translation";
-import StatsChUk from '../components/StatsChUk';
+import StatsChUkU13 from '../components/StatsChUkU13';
+import StatsChUkU16 from '../components/StatsChUkU16';
+
 
 export default function Home() {
     return (
@@ -14,12 +16,14 @@ export default function Home() {
         <main>
             <Hero />
             <Coach />
-            <StatsChUk />
+            <StatsChUkU13 />
+            <StatsChUkU16 />
             <Athletes />
             <News />
             <Translation />
             <Gallery />
             <Location />
+            
         </main>
 
     )

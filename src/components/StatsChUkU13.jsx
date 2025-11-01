@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/StatsChUk.css';
+import '../styles/LeagueTable.css';
 import { standingsU13 } from '../data/standingsU13';
 
-export default function StatsChUk ({ rows = standingsU13 }) {
+export default function StatsChUkU13 ({ rows = standingsU13 }) {
     if (!rows?.length) return null;
     return (
         <section>
