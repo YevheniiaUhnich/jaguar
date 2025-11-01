@@ -6,6 +6,7 @@ import Hero from "../components/Hero";
 import Location from "../components/Location";
 import News from "../components/News";
 import Translation from "../components/Translation";
+import StatsChUk from '../components/StatsChUk';
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
         <main>
             <Hero />
             <Coach />
+            <StatsChUk />
             <Athletes />
             <News />
             <Translation />
