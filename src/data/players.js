@@ -29,7 +29,10 @@ const rawPlayers = [
         heightCm: 160,
         stick: 'right',
         history: '...',
-        videos: '',
+        videos: [
+            {src: '/video-athletes/GoalDashko1.mp4', poster: '/video-athletes/posterDashko1.jpg'},
+            {src: '/video-athletes/GoalDashko2.mp4', poster: '/video-athletes/posterDashko2.png'}
+        ],
 
         stats: {
             regular: [
@@ -81,7 +84,7 @@ const rawPlayers = [
         weightKg: 57,
         heightCm: 163,
         stick: 'left',
-        history: 'Вона — не просто нападниця, а справжній хижак льоду: швидка, рішуча, з поглядом, що бачить шайбу ще до її руху. У формі «Ягуарів» вона несе в собі дух українських крил — горду, незламну силу, яка прорізає лід, як буря.',
+        history: 'Вона - не просто нападниця, а справжній хижак льоду: швидка, рішуча, з поглядом, що бачить шайбу ще до її руху. У формі «Ягуарів» вона несе в собі дух українських крил - горду, незламну силу, яка прорізає лід, як буря.',
         videos: [
             {src: '/video-athletes/BulitTorubara.mp4', poster: '/video-athletes/posterTorubara2.jpg'},
             {src: '/video-athletes/BulitTorubara2.mp4', poster: '/video-athletes/posterTorubara1.jpg'}
@@ -105,10 +108,10 @@ const rawPlayers = [
         patronymic: '',
         birthdate: '14.05.2012',
         number: 14,
-        position: '',
-        weightKg: 11,
-        heightCm: 11,
-        stick: '',
+        position: 'нападник',
+        weightKg: 58,
+        heightCm: 160,
+        stick: 'left',
         history: '...',
         video: '',
 
@@ -230,10 +233,10 @@ const rawPlayers = [
         patronymic: '',
         birthdate: '23.07.2013',
         number: 25,
-        position: '',
-        weightKg: 11,
-        heightCm: 11,
-        stick: '',
+        position: 'лівий нападник',
+        weightKg: 45,
+        heightCm: 158,
+        stick: 'left',
         history: '...',
         video: '',
 
@@ -306,9 +309,9 @@ const rawPlayers = [
         birthdate: '05.09.2013',
         number: 66,
         position: '',
-        weightKg: 11,
-        heightCm: 11,
-        stick: '',
+        weightKg: 62,
+        heightCm: 156,
+        stick: 'left',
         history: '...',
         video: '',
 
