@@ -4,6 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './styles/index.css';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import { loadGA } from "./ga";
+
+if (import.meta.env.PROD) {
+  loadGA();
+}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

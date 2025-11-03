@@ -7,15 +7,18 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 import AthletesPage from './pages/AthletesPage';
-import './styles/App.css';
-import ScrollTopButton from './components/ScrollTopButton';
-import './styles/ScrollTop.css';
+import GAListener from "./GAListener";
+import "./styles/App.css";
+import ScrollTopButton from "./components/ScrollTopButton";
+import "./styles/ScrollTop.css";
+
 
 export default function App() {
   return (
     <div className="app">
       <Header />
 
+      <GAListener />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/players/:slug" element={<AthletesPage />} />
