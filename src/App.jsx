@@ -12,7 +12,7 @@ import "./styles/App.css";
 import ScrollTopButton from "./components/ScrollTopButton";
 import "./styles/ScrollTop.css";
 import TranslationPage from "./pages/TranslationPage";
-
+import NewsPage from "./pages/NewsPage";
 
 export default function App() {
   return (
@@ -24,6 +24,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/players/:slug" element={<AthletesPage />} />
         <Route path="/translation" element={<TranslationPage />} />
+        <Route path="/news" element={<NewsPage />} />
 
         {/* <Route path="*" element={<NotFound />} />  */}
       </Routes>

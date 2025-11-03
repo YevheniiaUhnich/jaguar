@@ -24,6 +24,28 @@
     background-color: #E9C46A;
     border-radius: 2px;
 }
+.titleTranslationAll {
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 auto 50px;
+    color: #2E4D2E;
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+
+.titleTranslationAll::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #E9C46A;
+    border-radius: 2px;
+}
 
 .video-grid{
     display: grid;

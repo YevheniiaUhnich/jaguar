@@ -1,17 +1,20 @@
 import React from 'react';
 import '../styles/News.css';
+import { newsUrl } from "../data/news";
+import { Link } from "react-router-dom";
 
-const newsUrl = [
-  { id: 'u-1', url: 'https://www.facebook.com/share/v/1Fo5v1wvjS/', title: '🏒 Чемпіонат України. Еліт-ліга U13 💛 ХК Ягуар 🆚 ХК Сокіл 2014 🕗 Початок матчу - 08:00',  video: '/news/videoNews1.mp4', poster: '/news/new1.png'  },
-  { id: 'u-2', url: 'https://www.facebook.com/share/r/17VfbDtFeC/', title: '🏒🏒 Перший тур чемпіонату України з хокею з шайбою серед юнаків 2013–2014 р.н. 🏆', image: '/news/new2.png' },
-  { id: 'u-3', url: 'https://www.facebook.com/share/p/1R2UrhSDR9/', title: '🥅 МИСЛИВЦІ ЗА ГОЛАМИ 🏒 ⚜️ Масштабний хокейний турнір «Мисливці за голами» вже цієї пʼятниці та суботи 🗓️ проходитиме у нашому Льодограї 🧊', image: '/news/new3.jpg' },
-
-  
-  ];
+const idNum = (v) => {
+  const raw = typeof v?.id === "string" ? v.id : String(v?.id ?? "");
+  const m = raw.match(/(\d+)(?!.*\d)/);
+  return m ? parseInt(m[1], 10) : 0;
+};
 
 function getHost(url) {
-  try { return new URL(url).hostname.replace(/^www\./,''); }
-  catch { return 'джерело'; }
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "джерело";
+  }
 }
 
 function getYouTubeId(url) {
@@ -26,35 +29,42 @@ function getYouTubeId(url) {
 function autoImage(url) {
   const yt = getYouTubeId(url);
   if (yt) return `https://i.ytimg.com/vi/${yt}/hqdefault.jpg`;
-  return ''; 
+  return "";
 }
 
 function NewsCard({ item }) {
   const host = getHost(item.url);
-  const isVideo = Boolean(item.video) || /\.(mp4|webm|ogg)$/i.test(item.image || '');
-  const videoSrc = item.video || (/\.(mp4|webm|ogg)$/i.test(item.image || '') ? item.image : '');
-  const img = !isVideo ? (item.image || autoImage(item.url)) : '';
-
+  const isVideo =
+    Boolean(item.video) || /\.(mp4|webm|ogg)$/i.test(item.image || "");
+  const videoSrc =
+    item.video ||
+    (/\.(mp4|webm|ogg)$/i.test(item.image || "") ? item.image : "");
+  const img = !isVideo ? item.image || autoImage(item.url) : "";
 
   return (
-    <article id='news' className="container news-card">
-      <a className="news-link" href={item.url} target="_blank" rel="noopener noreferrer">
+    <article id="news" className="container news-card">
+      <a
+        className="news-link"
+        href={item.url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="news-media">
-        {isVideo ? (
-          <video
-            className="news-video"
-            src={videoSrc}
-            poster={item.poster}
-            controls
-            preload="none"
-            playsInline
-          />
-        ) : img ? (
-          <img src={img} alt={item.title || host} loading="lazy" />
-        ) : (
-          <div className="news-ph" aria-hidden="true" />
-        )}
-        {host && <span className="news-badge">{host}</span>}
+          {isVideo ? (
+            <video
+              className="news-video"
+              src={videoSrc}
+              poster={item.poster}
+              controls
+              preload="none"
+              playsInline
+            />
+          ) : img ? (
+            <img src={img} alt={item.title || host} loading="lazy" />
+          ) : (
+            <div className="news-ph" aria-hidden="true" />
+          )}
+          {host && <span className="news-badge">{host}</span>}
         </div>
 
         <div className="news-content">
@@ -67,19 +77,33 @@ function NewsCard({ item }) {
 }
 
 const News = () => {
+  const list = Array.isArray(newsUrl) ? [...newsUrl] : [];
+  list.sort((a, b) => idNum(b) - idNum(a));
+  const VISIBLE = list.slice(0, 3);
   return (
     <section className="news">
       <div className="container">
         <h2 className="titleNews">Останні новини</h2>
-
-        {newsUrl.length === 0 ? (
+        {VISIBLE.length === 0 ? (
           <p className="news-empty">Поки що немає новин</p>
         ) : (
-          <div className="news-grid">
-            {newsUrl.map(item => (
-              <NewsCard key={item.id} item={item} />
-            ))}
-          </div>
+          <>
+            <div className="news-grid">
+              {VISIBLE.map((item) => (
+                <NewsCard key={item.id} item={item} />
+              ))}
+            </div>
+
+            <div className="view-all-row">
+              <Link
+                to="/news"
+                className="view-all-btn"
+                aria-label="Дивитися усі новини"
+              >
+                Дивитися усі
+              </Link>
+            </div>
+          </>
         )}
       </div>
     </section>
@@ -87,3 +111,4 @@ const News = () => {
 };
 
 export default News;
+export { NewsCard };
