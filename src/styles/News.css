@@ -217,3 +217,7 @@
     grid-column: span 12;
   }
 }
+
+@media (prefers-reduced-motion: reduce){
+  .news-card{ transition:none !important; transform:none !important; }
+}

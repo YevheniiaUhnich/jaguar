@@ -8,23 +8,22 @@ import News from "../components/News";
 import Translation from "../components/Translation";
 import StatsChUkU13 from '../components/StatsChUkU13';
 import StatsChUkU16 from '../components/StatsChUkU16';
+import GoalkeeperCoach from "../components/GoalkeeperCoach";
 
 
 export default function Home() {
     return (
-
-        <main>
-            <Hero />
-            <Coach />
-            <StatsChUkU13 />
-            <StatsChUkU16 />
-            <Athletes />
-            <News />
-            <Translation />
-            <Gallery />
-            <Location />
-            
-        </main>
-
-    )
+      <main>
+        <Hero />
+        <Coach />
+        <GoalkeeperCoach />
+        <StatsChUkU13 />
+        <StatsChUkU16 />
+        <Athletes />
+        <News />
+        <Translation />
+        <Gallery />
+        <Location />
+      </main>
+    );
 }
