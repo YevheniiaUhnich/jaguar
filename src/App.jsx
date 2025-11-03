@@ -11,6 +11,7 @@ import GAListener from "./GAListener";
 import "./styles/App.css";
 import ScrollTopButton from "./components/ScrollTopButton";
 import "./styles/ScrollTop.css";
+import TranslationPage from "./pages/TranslationPage";
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/players/:slug" element={<AthletesPage />} />
+        <Route path="/translation" element={<TranslationPage />} />
 
         {/* <Route path="*" element={<NotFound />} />  */}
       </Routes>

@@ -1,73 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Translation.css";
-
-const VIDEOS = [
-  {
-    id: "yt-1",
-    kind: "youtube",
-    url: "https://www.youtube.com/live/tjFMDajPr38",
-    title:
-      "LIVE | ПАТРІОТ (ВІННИЦЯ) - ЯГУАР (ДНІПРО). ЧЕМПІОНАТ УКРАЇНИ З ХОКЕЮ (U-16). ЕЛІТ ЛІГА. 2-Й МАТЧ",
-  },
-  {
-    id: "yt-2",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=4ZdVMGStMac",
-    title:
-      "LIVE | ПАТРІОТ (ВІННИЦЯ) - ЯГУАР (ДНІПРО). ЧЕМПІОНАТ УКРАЇНИ З ХОКЕЮ (U-16). ЕЛІТ ЛІГА. 1-Й ТУР",
-  },
-  {
-    id: "yt-3",
-    kind: "youtube",
-    url: "https://www.youtube.com/live/gaFkpnnYe1A",
-    title:
-      " Ягуари (Дніпро) - Патріот (Вінниця) | ЧУ U13. Еліт ліга | 18.10.2025",
-  },
-  {
-    id: "yt-4",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=mFtHPVuq510",
-    title:
-      "Ягуари (Дніпро) - Патріот (Вінниця) | ЧУ U13. Еліт ліга | 19.10.2025",
-  },
-  {
-    id: "yt-5",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=rQqORB2UGhE&t=3800s",
-    title: "МАТЧ №15 ЯГУАР - КРИЖИНКА",
-  },
-  {
-    id: "yt-6",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=tWuH3EUfufw&t=764s",
-    title: "МАТЧ №12 ШЕРШНІ - ЯГУАР",
-  },
-  {
-    id: "yt-7",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=DB-zUBelXv0",
-    title: "МАТЧ №7 КРИЖИНКА - ЯГУАР",
-  },
-  {
-    id: "yt-8",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=cgL1zMwO5fM&t=20s",
-    title: "МАТЧ №3 ЯГУАР - СОКІЛ 14 (1)",
-  },
-  {
-    id: "yt-9",
-    kind: "youtube",
-    url: "https://www.youtube.com/watch?v=UbA37lquVTU",
-    title: "МАТЧ №15 ШЕРШНІ - ЯГУАР",
-  },
-];
+import { videoUrl } from "../data/translation";
 
 function getYouTubeId(url) {
+  if (!url) return null;
   const m =
-    url.match(/[?&]v=([^&]+)/) || // watch?v=ID
-    url.match(/youtu\.be\/([^?]+)/) || // youtu.be/ID
-    url.match(/youtube\.com\/live\/([^?]+)/) || // youtube.com/live/ID
-    url.match(/youtube\.com\/embed\/([^?]+)/); // youtube.com/embed/ID
+    url.match(/[?&]v=([^&]+)/) ||
+    url.match(/youtu\.be\/([^?]+)/) ||
+    url.match(/youtube\.com\/live\/([^?]+)/) ||
+    url.match(/youtube\.com\/embed\/([^?]+)/);
   return m ? m[1] : null;
 }
 
@@ -130,17 +72,17 @@ function HlsPlayer({ src, poster, title = "Live" }) {
   const [ready, setReady] = useState(false);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    return () => {
+  useEffect(
+    () => () => {
       hlsRef.current?.destroy();
       hlsRef.current = null;
-    };
-  }, []);
+    },
+    []
+  );
 
   const onActivate = async () => {
     const video = ref.current;
     if (!video || ready) return;
-
     try {
       if (video.canPlayType("application/vnd.apple.mpegURL")) {
         video.src = src;
@@ -212,14 +154,28 @@ function VideoCard({ item }) {
 }
 
 const Translation = () => {
+  const VISIBLE_COUNT = 6; // 2 ряди по 3
+  const VISIBLE = Array.isArray(videoUrl)
+    ? videoUrl.slice(0, VISIBLE_COUNT)
+    : [];
+
   return (
     <section id="video" className="translation">
       <div className="container">
         <h2 className="titleTranslation">Трансляції матчів</h2>
         <div className="video-grid">
-          {VIDEOS.map((v) => (
+          {VISIBLE.map((v) => (
             <VideoCard key={v.id} item={v} />
           ))}
+        </div>
+        <div className="view-all-row">
+          <Link
+            to="/translation"
+            className="view-all-btn"
+            aria-label="Дивитися усі відео"
+          >
+            Дивитися усі відео
+          </Link>
         </div>
       </div>
     </section>
@@ -227,3 +183,4 @@ const Translation = () => {
 };
 
 export default Translation;
+export { VideoCard };

@@ -25,70 +25,99 @@
     border-radius: 2px;
 }
 
-.video-grid {
+.video-grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 24px;
+  }
+
+.video-card{
+  background: linear-gradient(180deg,#fff 0%,#fafafa 60%,#f4f1e8 100%);
+  border: 1px solid rgba(233,196,106,.3);
+  border-radius: 12px;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,.7) inset,
+    0 0 0 1px rgba(0,0,0,.04) inset,
+    0 8px 16px rgba(0,0,0,.08),
+    0 24px 46px rgba(0,0,0,.12);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  overflow: hidden;
 }
 
-.video-card {
-    grid-column: span 4;
-    background: #fff;
-    border-radius: 14px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .08);
-    overflow: hidden;
-    transition: transform .25s ease, box-shadow .25s ease;
-}
+.video-card:hover{
+    transform: translateY(-6px);
+    border-color: #E9C46A;
+    box-shadow:
+      0 1px 0 rgba(255,255,255,.75) inset,
+      0 0 0 1px rgba(0,0,0,.05) inset,
+      0 12px 24px rgba(0,0,0,.12),
+      0 36px 64px rgba(0,0,0,.16);
+  }
 
-.video-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 22px rgba(0, 0, 0, .12);
-}
-
-.video-frame {
+  .video-frame{
     position: relative;
-    background: #000;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
-}
+    aspect-ratio: 16/9;
+    background: #0b0b0b;
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    isolation: isolate;
+  }
 
-.video-iframe,
-.video-el {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border: 0;
-}
+  .video-frame::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    background:
+      radial-gradient(90% 60% at 50% 0%, rgba(255,255,255,.25), rgba(255,255,255,0) 55%),
+      radial-gradient(130% 80% at 50% 100%, rgba(0,0,0,.18), rgba(0,0,0,0) 55%);
+    mix-blend-mode: soft-light;
+  }
 
-.lite-yt {
-    width: 100%;
-    height: 100%;
-    display: block;
+  .video-iframe,
+  .video-el{
+    width:100%;
+    height:100%;
+    display:block;
+    border:0;
+    border-radius: 0;
+  }
+
+.lite-yt{
+    width:100%;
+    height:100%;
+    display:block;
     position: relative;
+    border:0;
+    background: transparent;
     cursor: pointer;
-    background: #000;
-    border: 0;
-    padding: 0;
-}
+  }
 
-.lite-yt img {
-    width: 100%;
-    height: 100%;
+  .lite-yt img{
+    width:100%;
+    height:100%;
     object-fit: cover;
-    display: block;
-}
+    display:block;
+    filter: contrast(1.03) saturate(1.05);
+    transition: transform .35s ease, filter .25s ease;
+  }
 
-.play-btn {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-size: 56px;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, .6);
-    background: linear-gradient(transparent, rgba(0, 0, 0, .28));
-    pointer-events: none;
-}
+  .lite-yt:hover img{
+    transform: scale(1.03);
+    filter: contrast(1.05) saturate(1.08);
+  }
+
+  .play-btn{
+    position:absolute;
+    right:12px;
+    bottom:10px;
+    font-size:28px;
+    line-height:1;
+    background:#E9C46A;
+    color:#1f2e1f;
+    border-radius:10px;
+    padding:6px 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,.18);
+  }
 
 .play-overlay {
     position: absolute;
@@ -125,6 +154,33 @@
     outline: 2px solid #E9C46A;
     outline-offset: 3px;
 }
+
+.view-all-row{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+
+  .view-all-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 14px;
+    border-radius: 10px;
+    background:#3A6B35;
+    color:#E9C46A;
+    border:1px solid rgba(0,0,0,.06);
+    text-decoration:none;
+    font-weight:600;
+    box-shadow: 0 8px 18px rgba(0,0,0,.16), 0 1px 0 rgba(255,255,255,.6) inset;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+
+  .view-all-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(0,0,0,.18), 0 1px 0 rgba(255,255,255,.7) inset;
+    background:#2f5b2f;
+  }
 
 @media (max-width: 768px) {
     .translation {
