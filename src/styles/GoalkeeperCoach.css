@@ -163,16 +163,16 @@
 
 
 @media (max-width: 768px) {
-  .coach {
+  .goalkeeper {
     padding: 60px 0;
   }
   
-  .section-title {
+  .goalkeeper-title {
     font-size: 1.6rem;
     margin-bottom: 40px;
   }
   
-  .coach-content {
+  .goalkeeper-content {
     flex-direction: column;
     gap: 30px;
   }
@@ -181,11 +181,11 @@
     height: 300px;
   }
   
-  .coach-bio h3 {
+  .goalkeeper-bio h3 {
     font-size: 1.5rem;
   }
   
-  .coach-achievements {
+  .goalkeeper-achievements {
     gap: 20px;
   }
   
@@ -196,15 +196,15 @@
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .coach-content {
+  .goalkeeper-content {
     gap: 30px;
   }
   
-  .placeholder-image {
+  .placeholder-imageGoalkeeper{
     height: 350px;
   }
   
-  .coach-bio h3 {
+  .goalkeeper-bio h3 {
     font-size: 1.6rem;
   }
 }

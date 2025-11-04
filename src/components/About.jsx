@@ -6,7 +6,7 @@ const About = () => {
       <h2 className="titleAbout">Про нас</h2>
       <div className="about">
         <video
-          className="hero-bg"
+          className="about-bg"
           src="/1104.mov"
           poster="/hero-poster.jpg"
           autoPlay
@@ -15,8 +15,12 @@ const About = () => {
           playsInline
           preload="auto"
         />
+        <div className="about-overlay" />
+        <div className="about-photo-wrap">
+          <img src="/HK-Jaguar-gray.jpg" alt="jaguar" className="about-photo" />
+          <button className="btn-about">Детальніше</button>
+        </div>{" "}
       </div>
-      <div className="about-overlay" />
     </section>
   );
 };
