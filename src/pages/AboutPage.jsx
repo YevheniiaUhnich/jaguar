@@ -1,7 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function AboutPage() {
   return (
     <section className="about-page">
       <div className="container">
+        <Link to="/" className="about-back">
+          ← Назад
+        </Link>
         <h2 className="title-aboutPage">Про нас</h2>
         <div>
           <h3 className="title-text">
