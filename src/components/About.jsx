@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/About.css";
 
 const About = () => {
@@ -18,7 +19,13 @@ const About = () => {
         <div className="about-overlay" />
         <div className="about-photo-wrap">
           <img src="/HK-Jaguar-gray.jpg" alt="jaguar" className="about-photo" />
-          <button className="btn-about">Детальніше</button>
+          <Link
+            to="/about"
+            className="btn-about"
+            aria-label="детальніше про нас"
+          >
+            Детальніше
+          </Link>
         </div>{" "}
       </div>
     </section>

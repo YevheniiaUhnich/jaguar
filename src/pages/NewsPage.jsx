@@ -4,7 +4,6 @@ import { newsUrl } from "../data/news";
 import { NewsCard } from "../components/News.jsx";
 import { Link } from "react-router-dom";
 
-// числова частина з id, напр. 'n-12' -> 12
 const idNum = (v) => {
   const raw = typeof v?.id === "string" ? v.id : String(v?.id ?? "");
   const m = raw.match(/(\d+)(?!.*\d)/);
