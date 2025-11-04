@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Translation.css";
 import { videoUrl } from "../data/translation";
 import { VideoCard } from "../components/Translation.jsx";
-
+import { Link } from "react-router-dom";
 
 const idNum = (v) => {
   const raw = typeof v?.id === "string" ? v.id : String(v?.id ?? "");
@@ -17,6 +17,9 @@ export default function TranslationPage() {
   return (
     <section className="translation">
       <div className="container">
+        <Link to="/" className="translation-back">
+          ← Назад
+        </Link>
         <h1 className="titleTranslationAll">Усі відео</h1>
         <div className="video-grid">
           {videos.map((v) => (

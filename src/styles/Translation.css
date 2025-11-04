@@ -21,6 +21,15 @@
   background: linear-gradient(90deg, #E9C46A, #3A6B35);
 }
 
+.translation-back {
+  display: inline-block;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #2E4D2E;
+  transition: transform .2s ease;
+  margin-top: 80px;
+}
+
 .titleTranslation {
     position: relative;
     text-align: center;
