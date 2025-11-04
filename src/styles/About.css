@@ -1,0 +1,57 @@
+.about {
+  padding: 150px 0 100px;
+  background: #000;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: clamp(520px, 70vh, 900px);
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #E9C46A, #3A6B35);
+
+}
+
+/* .about-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 30% 30%, 
+    rgba(118, 116, 116, 0.4) 0%, 
+    rgba(96, 94, 94, 0.65) 60%
+  );
+  z-index: 1; 
+  pointer-events: none;
+} */
+.about-media{
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* найнижчий шар */
+}
+
+.titleAbout {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #2E4D2E; 
+  position: relative;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.titleAbout::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #E9C46A;
+}

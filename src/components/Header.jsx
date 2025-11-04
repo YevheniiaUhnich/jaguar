@@ -29,6 +29,9 @@ const Header = () => {
                 <a href="#coach">Тренери</a>
               </li>
               <li className="nav-item">
+                <a href="#about">Про нас</a>
+              </li>
+              <li className="nav-item">
                 <a href="#athletes">Спортсмени</a>
               </li>
               <li className="nav-item">
@@ -80,7 +83,10 @@ const Header = () => {
               <a href="#hero">Головна</a>
             </li>
             <li>
-              <a href="#coach">Тренер</a>
+              <a href="#coach">Тренери</a>
+            </li>
+            <li>
+              <a href="#about">Про нас</a>
             </li>
             <li>
               <a href="#athletes">Спортсмени</a>

@@ -9,6 +9,7 @@ import Translation from "../components/Translation";
 import StatsChUkU13 from '../components/StatsChUkU13';
 import StatsChUkU16 from '../components/StatsChUkU16';
 import GoalkeeperCoach from "../components/GoalkeeperCoach";
+import About from "../components/About";
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <Coach />
         <GoalkeeperCoach />
+        <About />
         <StatsChUkU13 />
         <StatsChUkU16 />
         <Athletes />
