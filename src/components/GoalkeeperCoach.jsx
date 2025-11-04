@@ -9,7 +9,7 @@ const GoalkeeperCoach = () => {
         <div className="goalkeeper-content">
           <div className="goalkeeper-image">
             <div className="placeholder-imageGoalkeeper">
-              <img src="/Haritonov.jpg" alt="Coach goalkeeper" />
+              <img src="/H.png" alt="Coach goalkeeper" />
             </div>
           </div>
           <div className="goalkeeper-bio">
