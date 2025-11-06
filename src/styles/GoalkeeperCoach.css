@@ -58,6 +58,12 @@
   border: 3px solid #E9C46A; 
 }
 
+.placeholder-wrap {
+  display: flex;
+flex-direction: column;
+
+}
+
 .placeholder-imageGoalkeeper {
   width: 100%;
   height: 450px;
@@ -68,7 +74,10 @@
   border-radius: 12px;
   position: relative;
   overflow: hidden;
+
 }
+
+
 
 .placeholder-imageGoalkeeper::before {
   content: '';
@@ -139,28 +148,6 @@
   border-left: 2px solid rgba(233, 196, 106, 0.3); 
 }
 
-.goalkeeper-achievements {
-  display: flex;
-  gap: 30px;
-}
-
-.achievement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.achievement-number {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333333; 
-}
-
-.achievement-text {
-  font-size: 0.9rem;
-  color: #006400; 
-}
-
 
 @media (max-width: 768px) {
   .goalkeeper {
@@ -176,33 +163,37 @@
     flex-direction: column;
     gap: 30px;
   }
+
+  .placeholder-wrap {
+    margin: 0;
+  }
+
   
   .placeholder-image {
-    height: 300px;
+    height: 250px;
+  }
+
+  .placeholder-imageGoalkeeper {
+    margin: 0;
+    height: 250px;
   }
   
   .goalkeeper-bio h3 {
     font-size: 1.5rem;
-  }
-  
-  .goalkeeper-achievements {
-    gap: 20px;
-  }
-  
-  .achievement-number {
-    font-size: 1.6rem;
   }
 }
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .goalkeeper-content {
-    gap: 30px;
+    gap: 14px;
   }
   
   .placeholder-imageGoalkeeper{
-    height: 350px;
+    height: 250px;
   }
+  
+  
   
   .goalkeeper-bio h3 {
     font-size: 1.6rem;
