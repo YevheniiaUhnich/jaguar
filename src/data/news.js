@@ -1,4 +1,11 @@
- export const newsUrl = [
+export const newsUrl = [
+  {
+    id: "u-4",
+    url: "https://www.facebook.com/share/v/1CW7KfgAoz/",
+    title: "Розклад матчів U16. Еліт ліга 🏒",
+    image: "/news/new4.png",
+  },
+
   {
     id: "u-3",
     url: "https://www.facebook.com/share/v/1Fo5v1wvjS/",
