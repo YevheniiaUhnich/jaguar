@@ -258,12 +258,17 @@ const rawPlayers = [
     patronymic: "",
     birthdate: "14.01.2012",
     number: 8,
-    position: "",
-    weightKg: 11,
-    heightCm: 11,
-    stick: "",
+    position: "захисник",
+    weightKg: 45,
+    heightCm: 160,
+    stick: "left",
     history: "...",
-    video: "",
+    videos: [
+      {
+        src: "/video-athletes/GoalKliushnykK.mp4",
+        poster: "/video-athletes/posterKliushnyk1.png",
+      },
+    ],
 
     stats: {
       regular: [
@@ -297,10 +302,10 @@ const rawPlayers = [
     patronymic: "",
     birthdate: "08.08.2012",
     number: 17,
-    position: "",
-    weightKg: 11,
-    heightCm: 11,
-    stick: "",
+    position: "лівий захисник",
+    weightKg: 55,
+    heightCm: 163,
+    stick: "left",
     history: "...",
     video: "",
 
