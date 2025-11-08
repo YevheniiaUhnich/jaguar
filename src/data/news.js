@@ -1,5 +1,11 @@
 export const newsUrl = [
   {
+    id: "u-5",
+    url: "https://www.facebook.com/share/v/1EZck2D8NN/",
+    title: "Кременчук-Ягуар U16. Еліт Ліга",
+    video: "/news/new5.mp4",
+  },
+  {
     id: "u-4",
     url: "https://www.facebook.com/share/v/1CW7KfgAoz/",
     title: "Розклад матчів U16. Еліт ліга 🏒",

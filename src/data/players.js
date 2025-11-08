@@ -708,9 +708,9 @@ const rawPlayers = [
     birthdate: "16.05.2013",
     number: 87,
     position: "воротар",
-    weightKg: 11,
-    heightCm: 11,
-    stick: "",
+    weightKg: 51,
+    heightCm: 167,
+    stick: "-",
     history: "...",
     video: "",
 

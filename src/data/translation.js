@@ -1,5 +1,17 @@
 export const videoUrl = [
   {
+    id: "yt-13",
+    kind: "youtube",
+    url: "https://www.youtube.com/watch?v=6t_rcN5nSIE",
+    title: "🏒 Кременчук - Ягуари (Дніпро) | ЧУ U16. Еліт ліга | 09.11.2025",
+  },
+  {
+    id: "yt-12",
+    kind: "youtube",
+    url: "https://www.youtube.com/live/PlM9ynax9d0",
+    title: "🏒 Кременчук - Ягуари (Дніпро) | ЧУ U16. Еліт ліга | 08.11.2025",
+  },
+  {
     id: "yt-11",
     kind: "youtube",
     url: "https://www.youtube.com/watch?v=CXorXfwI5MM&t=6113s",
