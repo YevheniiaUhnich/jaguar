@@ -345,7 +345,7 @@ const rawPlayers = [
     id: "8-p",
     slug: "reshetnova-myroslava",
     photo: "/athletes/Reshetnova.jpg",
-    surname: "Решетнева",
+    surname: "Решетньова",
     name: "Мирослава",
     patronymic: "",
     birthdate: "16.06.2011",
@@ -591,11 +591,20 @@ const rawPlayers = [
     birthdate: "04.10.2014",
     number: 68,
     position: "воротар",
-    weightKg: 11,
-    heightCm: 11,
-    stick: "",
+    weightKg: 49,
+    heightCm: 154,
+    stick: "right",
     history: "...",
-    video: "",
+    videos: [
+      {
+        src: "/video-athletes/videoBerd1.mp4",
+        poster: "/video-athletes/posterBerd.png",
+      },
+      {
+        src: "/video-athletes/videoBerd2.mp4",
+        poster: "/video-athletes/posterBerd.png",
+      },
+    ],
 
     stats: {
       regular: [
@@ -993,7 +1002,7 @@ const rawPlayers = [
     id: "24-p",
     slug: "reshetnov",
     photo: "/athletes/Reshetnov.jpeg",
-    surname: "Решетнев",
+    surname: "Решетньов",
     name: "Ернест",
     patronymic: "",
     birthdate: "16.06.2011",
