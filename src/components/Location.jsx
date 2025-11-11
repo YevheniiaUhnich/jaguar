@@ -12,7 +12,6 @@ const Location = () => {
         <h2 className="section-title">Наша локація</h2>
         <div className="location-content">
           <div className="location-map">
-
             <div className="map-wrap">
               <iframe
                 className="map-iframe"
@@ -40,19 +39,16 @@ const Location = () => {
               <h3>Графік роботи</h3>
               <p>Понеділок: 16:00 - 20:00</p>
               <p>Вівторок: 16:00 - 20:00</p>
-              <p>Середа: 6:00 - 80:00, 16.00 - 17.45</p>
+              <p>Середа: 6:00 - 08:00, 16.00 - 17.45</p>
               <p>Четвер: 16:00 - 20:00</p>
-              <p>Пʼятниця: 6:00 - 80:00</p>
+              <p>Пʼятниця: 6:00 - 08:00</p>
               <p>Субота, неділя: Ігри ЧУ</p>
             </div>
-
-
-
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Location
