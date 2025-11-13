@@ -2,6 +2,9 @@ import React from 'react'
 import '../styles/Hero.css'
 
 const Hero = () => {
+  const call = () => {
+    window.location.href = "tel:+380674388444";
+  };
   return (
     <section id="hero" className="hero">
       <video
@@ -25,7 +28,9 @@ const Hero = () => {
               Наш хокейний клуб допоможе вам розкрити свій потенціал та досягти
               найвищих результатів
             </p>
-            <button className="cta-button">Звʼязатися з тренером</button>
+            <button onClick={call} className="cta-button">
+              Звʼязатися з тренером
+            </button>
           </div>
           <div className="hero-image">
             <div className="placeholder-image">

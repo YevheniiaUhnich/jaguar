@@ -53,8 +53,8 @@ const Footer = () => {
             <div className="footer-links-column">
               <h3>Контакти</h3>
               <ul>
-                <li>Телефон: +380(00) 111-11-11</li>
-                <li>Email: info@sportsclub.ua</li>
+                <li>Телефон: +380(67) 438-84-44</li>
+                {/* <li>Email: info@sportsclub.ua</li> */}
                 <li>Адреса: вул. Набережна Заводська, 53, м. Дніпро</li>
               </ul>
             </div>
