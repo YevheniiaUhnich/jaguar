@@ -1,5 +1,11 @@
 export const newsUrl = [
   {
+    id: "u-6",
+    url: "https://www.facebook.com/share/v/17ZkLkc65B/",
+    title: "🏒 Чемпіонат України U13: ХК Крижинка — ХК Ягуар",
+    video: "/news/new6.mp4",
+  },
+  {
     id: "u-5",
     url: "https://www.facebook.com/share/v/1EZck2D8NN/",
     title: "Кременчук-Ягуар U16. Еліт Ліга",
