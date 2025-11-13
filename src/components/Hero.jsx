@@ -14,16 +14,20 @@ const Hero = () => {
         playsInline
         preload="auto"
       />
-       <div className="hero-overlay" />
+      <div className="hero-overlay" />
       <div className="container">
         <div className="hero-content">
           <div className="hero-text">
-            <h2>Досягайте <br></br> нових висот разом з нами</h2>
-            <p>Наш хокейний клуб допоможе вам розкрити свій потенціал та досягти найвищих результатів</p>
-            <button className="cta-button">Приєднатися</button>
+            <h2>
+              Досягайте <br></br> нових висот разом з нами
+            </h2>
+            <p>
+              Наш хокейний клуб допоможе вам розкрити свій потенціал та досягти
+              найвищих результатів
+            </p>
+            <button className="cta-button">Звʼязатися з тренером</button>
           </div>
           <div className="hero-image">
-
             <div className="placeholder-image">
               <img src="/jaguar.jpg" alt="Yaguar" />
             </div>
@@ -31,7 +35,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Hero
