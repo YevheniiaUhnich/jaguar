@@ -69,6 +69,10 @@ const rawPlayers = [
         src: "/video-athletes/GoalDashko2.mp4",
         poster: "/video-athletes/posterDashko2.png",
       },
+      {
+        src: "/video-athletes/videoashko3.mp4",
+        poster: "/video-athletes/posterDashko3.png",
+      },
     ],
 
     stats: {
