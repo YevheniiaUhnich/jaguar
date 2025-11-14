@@ -139,10 +139,10 @@ const rawPlayers = [
           season: "2024-2025",
           club: "JAGUAR",
           league: "Еліт-ліга U13",
-          games: 0,
+          games: 4,
           goals: 0,
           assists: 0,
-          pim: 0,
+          pim: 4,
         },
         {
           season: "2025-2026",
