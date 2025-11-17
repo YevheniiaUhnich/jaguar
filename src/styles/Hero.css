@@ -20,14 +20,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(.9) contrast(1.05);
-  opacity: .5;
+  /* filter: saturate(.9) contrast(1.05); */
+  opacity: .9;
   z-index: 1; 
   pointer-events: none;
 
 }
 
-.hero-overlay {
+/* .hero-overlay {
   position: absolute;
   inset: 0;
   background: radial-gradient(
@@ -37,7 +37,7 @@
   );
   z-index: 1; 
   pointer-events: none;
-}
+} */
 
 
 /* .hero::before {
@@ -173,7 +173,6 @@
     padding: 60px 0 40px;
     text-align: center;
   }
-  .hero-bg{ opacity: .25; } 
   
   .hero-content {
     flex-direction: column;

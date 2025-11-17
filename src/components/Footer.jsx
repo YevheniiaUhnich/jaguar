@@ -54,7 +54,7 @@ const Footer = () => {
               <h3>Контакти</h3>
               <ul>
                 <li>Телефон: +380(67) 438-84-44</li>
-                {/* <li>Email: info@sportsclub.ua</li> */}
+                <li>Email: jaguardnipro20132014@gmail.com</li>
                 <li>Адреса: вул. Набережна Заводська, 53, м. Дніпро</li>
               </ul>
             </div>

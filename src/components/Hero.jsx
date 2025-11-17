@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="hero" className="hero">
       <video
         className="hero-bg"
-        src="/hero-video.mp4"
+        src="/heroV.mp4"
         poster="/hero-poster.jpg"
         autoPlay
         muted

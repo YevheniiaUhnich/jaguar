@@ -59,8 +59,8 @@
   background: linear-gradient(145deg, #ffffff 0%, #f8f9ff 100%);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15),
-    0 4px 15px rgba(18, 144, 108, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  /* box-shadow: 0 10px 30px rgba(102, 126, 234, 0.15),
+    0 4px 15px rgba(18, 144, 108, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.8); */
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border: 2px solid transparent;
   position: relative;
@@ -86,8 +86,8 @@
 
 .athlete-card:hover {
   transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(11, 102, 69, 0.25),
-    0 8px 25px rgba(3, 113, 53, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  /* box-shadow: 0 20px 40px rgba(11, 102, 69, 0.25),
+    0 8px 25px rgba(3, 113, 53, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.9); */
   border-color: #e9c46a;
 }
 
@@ -119,8 +119,6 @@
 .placeholder-image {
   width: 100%;
   height: 250px;
-
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   display: flex;
   justify-content: center;
   align-items: center;
