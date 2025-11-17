@@ -9,9 +9,12 @@ export default function StatsChUkU16() {
   const rows = rankStandings(standingsU16);
   if (!rows?.length) return null;
   return (
-    <section className='league'>
+    <section className="leaguePage">
       <div className="container">
-        <h2 className="titleChUk">Чемпіонат України з хокею <br></br>серед юнаків 2010-2012 року народження <br></br>сезону 2025-2026 р. ЕЛІТ ЛІГА</h2>
+        <h2 className="titleChUk">
+          Чемпіонат України з хокею <br></br>серед юнаків 2010-2012 року
+          народження <br></br>сезону 2025-2026 р. ЕЛІТ ЛІГА
+        </h2>
 
         <div className="table-wrap">
           <table className="league-table">
@@ -45,5 +48,5 @@ export default function StatsChUkU16() {
         </div>
       </div>
     </section>
-  )
+  );
 }

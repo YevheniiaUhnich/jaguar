@@ -1,59 +1,228 @@
-.league{ margin-top:16px; }
+.league {
+  margin-top: 16px;
+  background: #040907;
+  color: #f8f3da;
+}
+
+.league-page {
+  margin-top: 80px;
+}
 
 .titleChUk {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 50px;
-  color: #2E4D2E; 
+  color: #2e4d2e;
   position: relative;
   font-weight: 700;
   padding-bottom: 15px;
 }
 
-.titleChUk::after{
-  content: '';
+.titleChUk::after {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: #E9C46A;
+  background-color: #e9c46a;
 }
 
-.table-wrap{
-  overflow-x:auto;
-  border-radius:12px;
-  border:1px solid rgba(233,196,106,.35);
-  background:#fff;
-  box-shadow:0 6px 12px rgba(0,0,0,.06);
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(233, 196, 106, 0.35);
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
 }
 
-.league-table{
-  width:100%;
-  border-collapse:separate;
-  border-spacing:0;
-  min-width:760px;
+.league-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 760px;
 }
-.league-table thead th{
-  position:sticky; top:0;
-  background:#F8F6EE;
-  color:#2E4D2E;
-  font-weight:700;
-  text-align:left;
-  padding:10px 12px;
-  border-bottom:1px solid rgba(233,196,106,.6);
-  white-space:nowrap;
+.league-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f8f6ee;
+  color: #2e4d2e;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(233, 196, 106, 0.6);
+  white-space: nowrap;
 }
-.league-table tbody td{
-  padding:10px 12px;
-  border-bottom:1px solid rgba(233,196,106,.25);
-  color:#2E4D2E;
+.league-table tbody td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(233, 196, 106, 0.25);
+  color: #fdf7df;
 }
-.league-table tbody tr:hover{ background:rgba(233,196,106,.08); }
-.c{ text-align:center; }
+.league-table tbody tr:hover {
+  background: rgba(233, 196, 106, 0.08);
+}
+.c {
+  text-align: center;
+}
 
-@media (max-width:768px){
-  .league-title{ font-size:1.2rem; }
-  .table-wrap{ border-radius:10px; }
+.details-btn-wrap {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.details-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 32px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+    background 0.15s ease-out, border-color 0.15s ease-out;
+}
+
+.details-btn--green-gold {
+  background: linear-gradient(90deg, #0f5132, #198754);
+  color: #f8f3da;
+  border: 1px solid #d4af37;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.details-btn--green-gold:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  border-color: #f1d27a;
+}
+
+.details-btn--green-gold:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.details-btn__icon {
+  font-size: 1.1em;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+/* стилі для таблиць сторінки */
+
+.table-wrap {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 20px;
+  background: radial-gradient(circle at top, #1c4831 0%, #183627 60%, #183d31 100%);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(0, 0, 0, 0.6) inset;
+  overflow-x: auto;
+}
+
+.tournament-matrix {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+.tournament-matrix thead th {
+  padding: 10px 8px;
+  background: linear-gradient(180deg, #155137 0%, #0b3120 100%);
+  border-bottom: 2px solid #d4af37;
+  color: #fdf7df;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+  word-break: break-word;
+  line-height: 1.2;
+}
+
+.tournament-matrix td {
+  padding: 8px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8f3da;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.tournament-matrix tbody tr:nth-child(2n) td {
+  background: rgba(9, 32, 21, 0.7);
+}
+
+.tournament-matrix tbody td:first-child {
+  font-weight: 600;
+  color: #f3dea0;
+  width: 70px;
+  white-space: nowrap;
+}
+
+.tournament-matrix tbody td:nth-child(2) {
+  font-weight: 600;
+  color: #f8f3da;;
+}
+
+.cell-score {
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.cell-diag {
+  text-align: center;
+  font-weight: 700;
+  color: rgba(245, 227, 149, 0.6);
+  background: radial-gradient(circle, rgba(10, 41, 27, 0.9) 0%, rgba(21, 71, 49, 0.9) 70%);
+}
+
+.tournament-matrix tbody tr:hover td {
+  background: rgba(26, 75, 49, 0.9);
+}
+
+.tournament-matrix thead th:first-child,
+.tournament-matrix thead th:nth-child(2) {
+  width: 60px;
+  max-width: 60px;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.tournament-matrix thead th:nth-child(2),
+.tournament-matrix tbody td:nth-child(2) {
+  width: 220px;
+  max-width: 220px;
+}
+
+@media (max-width: 768px) {
+  .league-title {
+    font-size: 1.2rem;
+  }
+  .table-wrap {
+    border-radius: 10px;
+  }
+  .league-page {
+    padding: 24px 0 40px;
+  }
+  .table-wrap {
+    padding: 12px;
+    border-radius: 14px;
+  }
+  .tournament-matrix {
+    min-width: 600px;
+    font-size: 13px;
+  }
+  .titleChUk {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
