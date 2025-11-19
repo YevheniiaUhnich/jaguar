@@ -130,7 +130,7 @@
 .tournament-matrix {
   width: 100%;
   border-collapse: collapse;
-  min-width: 720px;
+  min-width: 1040px;
   font-size: 14px;
   table-layout: fixed;
 }
@@ -217,10 +217,7 @@
     padding: 12px;
     border-radius: 14px;
   }
-  .tournament-matrix {
-    min-width: 600px;
-    font-size: 13px;
-  }
+
   .titleChUk {
     font-size: 16px;
     line-height: 1.4;
