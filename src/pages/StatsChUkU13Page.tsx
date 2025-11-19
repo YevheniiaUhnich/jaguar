@@ -1,38 +1,18 @@
 import React from "react";
 import "../styles/LeagueTable.css";
-import { tur1U13 } from "../data/tur1U13.js";
-import { tur1 } from "../data/tur1U13.js";
-import { teams } from "../data/tur1U13.js";
-import { rankStandings } from "../utils/rank.js";
-import { AiOutlineDownCircle } from "react-icons/ai";
+import {
+  teamsTur1,
+  teamsTur2,
+  teamsTur3,
+  tur1U13,
+  tur2U13,
+  tur1,
+  tur2,
+  tur3,
+} from "../data/turU13.js";
+import { TourMatrixU13 } from "../components/TourMatrixU13.jsx";
 
 export default function StatsChUkU13Page() {
-  const rows = rankStandings(tur1U13);
-  if (!rows?.length) return null;
-
-  // допоміжна функція: повертає рахунок з точки зору рядка
-  const getScoreForPair = (rowId, colId) => {
-    if (rowId === colId) return "";
-
-    const direct = tur1[rowId]?.[colId];
-    const reverse = tur1[colId]?.[rowId];
-
-    const base = direct ?? reverse;
-    if (!base) return "";
-
-    const scores = Array.isArray(base) ? base : [base];
-    const needReverse = !direct && !!reverse; // якщо дані зберігаються у зворотньому напрямку
-
-    const normalized = scores.map((s) => {
-      const [a, b] = s.split(":").map((v) => v.trim());
-      if (!a || !b) return s;
-      // перша цифра - команда з рядка
-      return needReverse ? `${b}:${a}` : `${a}:${b}`;
-    });
-
-    return normalized.join("  /  ");
-  };
-
   return (
     <section className="league-page">
       <div className="container">
@@ -42,48 +22,27 @@ export default function StatsChUkU13Page() {
           <br />
           сезону 2025-2026 р. ЕЛІТ ЛІГА
         </h2>
-        <h3 className="titleChUk">Тур 1</h3>
 
-        <div className="table-wrap">
-          <table className="tournament-matrix">
-            <thead>
-              <tr>
-                <th>Очки</th>
-                <th>Команда</th>
-                {teams.map((t) => (
-                  <th key={t.id}>{t.name}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {teams.map((team, rowIndex) => (
-                <tr key={team.id}>
-                  <td>{team.points}</td>
-                  <td>{team.name}</td>
+        <TourMatrixU13
+          title="Тур 1"
+          standings={tur1U13}
+          results={tur1}
+          teams={teamsTur1}
+        />
 
-                  {teams.map((opponent, colIndex) => {
-                    // діагональ - іконка, без рахунку
-                    if (rowIndex === colIndex) {
-                      return (
-                        <td key={opponent.id} className="cell-diag">
-                          <AiOutlineDownCircle />
-                        </td>
-                      );
-                    }
+        <TourMatrixU13
+          title="Тур 2"
+          standings={tur2U13}
+          results={tur2}
+          teams={teamsTur2}
+        />
 
-                    const score = getScoreForPair(team.id, opponent.id);
-
-                    return (
-                      <td key={opponent.id} className="cell-score">
-                        {score}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <TourMatrixU13
+          title="Тур 3"
+          standings={tur2U13}
+          results={tur3}
+          teams={teamsTur3}
+        />
       </div>
     </section>
   );

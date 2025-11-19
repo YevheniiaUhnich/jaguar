@@ -113,10 +113,9 @@
   transform: translateY(1px);
 }
 
-/* стилі для таблиць сторінки */
-
 .table-wrap {
   margin-top: 24px;
+  margin-bottom: 40px;
   padding: 16px;
   border-radius: 20px;
   background: radial-gradient(circle at top, #1c4831 0%, #183627 60%, #183d31 100%);
