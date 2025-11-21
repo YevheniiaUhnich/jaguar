@@ -18,7 +18,7 @@ const About = () => {
         />
         <div className="about-overlay" />
         <div className="about-photo-wrap">
-          <img src="/HK-Jaguar-gray.jpg" alt="jaguar" className="about-photo" />
+          <img src="/JaguarNew1.jpeg" alt="jaguar" className="about-photo" />
           <Link
             to="/about"
             className="btn-about"

@@ -18,7 +18,7 @@ const Header = () => {
         <div className="header-content">
           <div className="logo">
             <img src="/imageFon.png" alt="Логотип" className="logo-img" />
-            <h1>ХК "Ягуари"</h1>
+            <h1>ХК "ЯГУАР"</h1>
           </div>
           <nav className="navigation">
             <ul className="nav-list">

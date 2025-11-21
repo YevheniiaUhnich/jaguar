@@ -1,5 +1,19 @@
 export const videoUrl = [
   {
+    id: "yt-15",
+    kind: "youtube",
+    url: "https://www.youtube.com/live/gOLj4yBzR3U",
+    title:
+      "🏒 Крижинка (Київ) - Ягуар (Дніпро) 🏆 ЧУ U13. Еліт Ліга | 16.11.2025",
+  },
+  {
+    id: "yt-14",
+    kind: "youtube",
+    url: "https://www.youtube.com/live/_PustFhGREk",
+    title:
+      "🏒 Крижинка (Київ) - Ягуар (Дніпро) 🏆 ЧУ U13. Вища Ліга | 15.11.2025",
+  },
+  {
     id: "yt-13",
     kind: "youtube",
     url: "https://www.youtube.com/watch?v=6t_rcN5nSIE",

@@ -70,7 +70,7 @@ export const tur2U13 = [
 
 export const tur3U13 = [
   {
-    points: 6,
+    points: 5,
     name: "МДЮСШ Ягуари, м. Дніпро",
   },
   {
@@ -82,7 +82,7 @@ export const tur3U13 = [
     name: "ДЮСШ Сокіл 2, м. Київ",
   },
   {
-    points: 0,
+    points: 1,
     name: "ДЮСШ Крижинка, м. Київ",
   },
   {
@@ -126,10 +126,10 @@ export const teamsTur2 = [
 ];
 
 export const teamsTur3 = [
-  { id: "jaguars", points: 6, name: "МДЮСШ Ягуари, м. Дніпро" },
+  { id: "jaguars", points: 5, name: "МДЮСШ Ягуари, м. Дніпро" },
   { id: "sokil1", points: 6, name: "ДЮСШ Сокіл 1, м. Київ" },
   { id: "sokil2", points: 6, name: "ДЮСШ Сокіл 2, м. Київ" },
-  { id: "kryzhynka", points: 0, name: "ДЮСШ Крижинка, м. Київ" },
+  { id: "kryzhynka", points: 1, name: "ДЮСШ Крижинка, м. Київ" },
   { id: "dnipro", points: 0, name: "МДЮСШ Дніпро, м. Дніпро" },
   { id: "avangard", points: 0, name: "ДЮСШ Авангард, м. Кременчук" },
   { id: "patriot", points: 6, name: "ДЮСШ Патріот, м. Вінниця" },

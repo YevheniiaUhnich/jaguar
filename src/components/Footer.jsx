@@ -15,7 +15,7 @@ const Footer = () => {
                 alt="Логотип"
                 className="brand-logo-img"
               />
-              <h1 className="brand-title">ХК "Ягуари"</h1>
+              <h1 className="brand-title">ХК "Ягуар"</h1>
             </div>
             <p className="brand-subtitle">Досягайте нових висот разом з нами</p>
           </div>
@@ -80,7 +80,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {currentYear} ХК "Ягуари". Всі права захищені.</p>
+          <p>&copy; {currentYear} ХК "Ягуар". Всі права захищені.</p>
         </div>
       </div>
     </footer>

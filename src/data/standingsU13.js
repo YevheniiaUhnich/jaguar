@@ -7,7 +7,7 @@ export const standingsU13 = [
     psh: 32,
     vi: 2,
     pi: 4,
-    pts: 6,
+    pts: 5,
   },
   {
     place: 0,
@@ -37,7 +37,7 @@ export const standingsU13 = [
     psh: 27,
     vi: 0,
     pi: 4,
-    pts: 0,
+    pts: 1,
   },
   {
     place: 0,
