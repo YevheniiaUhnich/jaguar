@@ -1,5 +1,19 @@
 export const videoUrl = [
   {
+    id: "yt-17",
+    kind: "youtube",
+    url: "https://www.youtube.com/watch?v=oXtTL_lcFu4",
+    title:
+      "🏒 Ягуари (Дніпро) - Сокіл-2010 (Київ) | ЧУ U16. Еліт ліга | 24.11.2025",
+  },
+  {
+    id: "yt-16",
+    kind: "youtube",
+    url: "https://www.youtube.com/watch?v=Hq2fHzcqpPY",
+    title:
+      "🏒 Ягуари (Дніпро) - Сокіл-2010 (Київ) | ЧУ U16. Еліт ліга | 23.11.2025",
+  },
+  {
     id: "yt-15",
     kind: "youtube",
     url: "https://www.youtube.com/live/gOLj4yBzR3U",

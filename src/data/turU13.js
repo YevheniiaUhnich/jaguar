@@ -119,7 +119,7 @@ export const teamsTur2 = [
   { id: "sokil1", points: 6, name: "ДЮСШ Сокіл 1, м. Київ" },
   { id: "sokil2", points: 6, name: "ДЮСШ Сокіл 2, м. Київ" },
   { id: "kryzhynka", points: 0, name: "ДЮСШ Крижинка, м. Київ" },
-  { id: "dnipro", points: 0, name: "МДЮСШ Дніпро, м. Дніпро" },
+  { id: "dnipro", points: 6, name: "МДЮСШ Дніпро, м. Дніпро" },
   { id: "avangard", points: 0, name: "ДЮСШ Авангард, м. Кременчук" },
   { id: "patriot", points: 0, name: "ДЮСШ Патріот, м. Вінниця" },
   { id: "shershni", points: 6, name: "КПНЗ КОР КОК ДЮСШ Шершні, м. Богуслав" },
@@ -168,9 +168,9 @@ export const tur2 = {
     shershni: ["8:13", "6:13"],
   },
   kryzhynka: {
-    dnipro: ["0:0", "0:0"],
-  }
-}
+    dnipro: ["2:7", "1:6"],
+  },
+};
 
 export const tur3 = {
   sokil1: {
