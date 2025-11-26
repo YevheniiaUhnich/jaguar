@@ -123,9 +123,14 @@
   color: #333333; 
 }
 
+.footer-title-nav {
+  margin-left: 10px;
+}
+
 .social-links {
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
 }
 
 .social-links a {

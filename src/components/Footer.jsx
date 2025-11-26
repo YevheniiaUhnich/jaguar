@@ -22,7 +22,7 @@ const Footer = () => {
 
           <div className="footer-links">
             <div className="footer-links-column">
-              <h3>Навігація</h3>
+              <h3 className="footer-title-nav">Навігація</h3>
               <ul>
                 <li>
                   <a href="#hero">Головна</a>
