@@ -1,5 +1,19 @@
 export const videoUrl = [
   {
+    id: "yt-19",
+    kind: "youtube",
+    url: "https://www.youtube.com/watch?v=xyusGoahidg",
+    title:
+      "🏒 МДЮСШ-Дніпро (Дніпро) - Ягуари (Дніпро) | ЧУ U13. Еліт ліга | 28.11.2025",
+  },
+  {
+    id: "yt-18",
+    kind: "youtube",
+    url: "https://www.youtube.com/watch?v=iMmJnZzoWzw",
+    title:
+      "🏒 МДЮСШ-Дніпро (Дніпро) - Ягуари (Дніпро) | ЧУ U13. Еліт ліга | 27.11.2025",
+  },
+  {
     id: "yt-17",
     kind: "youtube",
     url: "https://www.youtube.com/watch?v=oXtTL_lcFu4",
