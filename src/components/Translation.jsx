@@ -60,8 +60,6 @@ function Mp4Player({ src, poster, title = "Відео" }) {
       controls
       preload="none"
       playsInline
-      width="480"
-      height="270"
     >
       Ваш браузер не підтримує відео.
     </video>
