@@ -62,7 +62,11 @@ const Footer = () => {
               <h3>Соціальні мережі</h3>
               <ul className="social-links">
                 <li>
-                  <a href="https://www.facebook.com/groups/1280780848954295/">
+                  <a
+                    href="https://www.facebook.com/groups/1280780848954295/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Facebook
                   </a>
                 </li>

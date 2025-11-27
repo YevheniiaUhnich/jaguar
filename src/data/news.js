@@ -1,5 +1,13 @@
 export const newsUrl = [
   {
+    id: "u-7",
+    url: "https://www.facebook.com/share/v/1AbANjSb3j/",
+    title:
+      "На льодовій арені Дніпро пройдуть поєдинки між командами Дніпро та Ягуар (Дніпро)",
+    // video: "/news/new6.mp4",
+    image: "/news/new6.jpg",
+  },
+  {
     id: "u-6",
     url: "https://www.facebook.com/share/v/17ZkLkc65B/",
     title: "🏒 Чемпіонат України U13: ХК Крижинка — ХК Ягуар",
