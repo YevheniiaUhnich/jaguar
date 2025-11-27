@@ -3,12 +3,12 @@ import '../styles/Gallery.css'
 
 const VISIBLE = 3
 
-const WORK_COUNT = 128;
-const REST_COUNT = 61;
+const WORK_COUNT = 122;
+const REST_COUNT = 55;
 
 const BASE = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
 const EXT_ORDER = ["jpg", "jpeg"];
-const PAD_ORDER = [0, 2, 3];
+const PAD_ORDER = [0, 2, 3]; 
 
 const GalleryStrip = ({ folder, count, title, onSelect }) => {
   const containerRef = useRef(null);
@@ -171,7 +171,7 @@ const GalleryStrip = ({ folder, count, title, onSelect }) => {
       </div>
     </div>
   );
-};
+}
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -223,6 +223,6 @@ const Gallery = () => {
       )}
     </section>
   );
-};
+}
 
 export default Gallery
