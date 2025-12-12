@@ -102,6 +102,41 @@ export const tur3U13 = [
     name: "КПНЗ КОР КОК ДЮСШ Шершні, м. Богуслав",
   },
 ];
+export const tur4U13 = [
+  {
+    points: 0,
+    name: "МДЮСШ Ягуари, м. Дніпро",
+  },
+  {
+    points: 6,
+    name: "ДЮСШ Сокіл 1, м. Київ",
+  },
+  {
+    points: 4,
+    name: "ДЮСШ Сокіл 2, м. Київ",
+  },
+  {
+    points: 0,
+    name: "ДЮСШ Крижинка, м. Київ",
+  },
+  {
+    points: 6,
+    name: "МДЮСШ Дніпро, м. Дніпро",
+  },
+  {
+    points: 2,
+    name: "ДЮСШ Авангард, м. Кременчук",
+  },
+  {
+    points: 6,
+    name: "ДЮСШ Патріот, м. Вінниця",
+  },
+  {
+    points: 0,
+    name: "КПНЗ КОР КОК ДЮСШ Шершні, м. Богуслав",
+  },
+];
+
 
 export const teamsTur1 = [
   { id: "jaguars", points: 0, name: "МДЮСШ Ягуари, м. Дніпро" },
@@ -132,6 +167,17 @@ export const teamsTur3 = [
   { id: "kryzhynka", points: 1, name: "ДЮСШ Крижинка, м. Київ" },
   { id: "dnipro", points: 0, name: "МДЮСШ Дніпро, м. Дніпро" },
   { id: "avangard", points: 0, name: "ДЮСШ Авангард, м. Кременчук" },
+  { id: "patriot", points: 6, name: "ДЮСШ Патріот, м. Вінниця" },
+  { id: "shershni", points: 0, name: "КПНЗ КОР КОК ДЮСШ Шершні, м. Богуслав" },
+];
+
+export const teamsTur4 = [
+  { id: "jaguars", points: 0, name: "МДЮСШ Ягуари, м. Дніпро" },
+  { id: "sokil1", points: 6, name: "ДЮСШ Сокіл 1, м. Київ" },
+  { id: "sokil2", points: 4, name: "ДЮСШ Сокіл 2, м. Київ" },
+  { id: "kryzhynka", points: 0, name: "ДЮСШ Крижинка, м. Київ" },
+  { id: "dnipro", points: 6, name: "МДЮСШ Дніпро, м. Дніпро" },
+  { id: "avangard", points: 2, name: "ДЮСШ Авангард, м. Кременчук" },
   { id: "patriot", points: 6, name: "ДЮСШ Патріот, м. Вінниця" },
   { id: "shershni", points: 0, name: "КПНЗ КОР КОК ДЮСШ Шершні, м. Богуслав" },
 ];
@@ -184,5 +230,20 @@ export const tur3 = {
   },
   patriot: {
     avangard: ["18:4", "9:5"],
+  },
+}
+
+export const tur4 = {
+  sokil1: {
+    shershni: ["8:3", "6:3"],
+  },
+  dnipro: {
+    jaguars: ["7:1", "4:1"],
+  },
+  sokil2: {
+    avangard: ["9:10(Б)", "8:2"],
+  },
+  patriot: {
+    kryzhynka: ["14:2", "9:2"],
   },
 }
