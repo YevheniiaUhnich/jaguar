@@ -45,7 +45,7 @@ export const standingsU16 = [
     games: 4,
     zsh: 27,
     psh: 15,
-    vi: 0,
+    vi: 4,
     pi: 0,
     pts: 12,
   },
