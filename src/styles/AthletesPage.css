@@ -115,17 +115,26 @@
 }
 
 .player-videos-title {
-  margin: 0 0 10px;
+  margin: 20px 0 10px;
   color: #2E4D2E;
   font-size: 1.1rem;
   font-weight: 700;
 }
-
+  
 .player-videos-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
+
+.player-videos-grid--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.player-videos-grid--3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 
 .player-video {
   width: 100%;

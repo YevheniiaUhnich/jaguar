@@ -14,7 +14,7 @@
 
 .athletes::before {
   content: "";
-  position: absolute;
+  position: absolute; 
   inset: 0;
   background: radial-gradient(
       circle at 30% 20%,

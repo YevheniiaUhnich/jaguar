@@ -12,7 +12,19 @@ import {
   tur1,
   tur2,
   tur3,
-  tur4
+  tur4,
+  tur5,
+  teamsTur5,
+  tur5U13,
+  tur6,
+  tur6U13,
+  teamsTur6,
+  tur7U13,
+  tur7,
+  teamsTur7,
+  tur8U13,
+  tur8,
+  teamsTur8
 } from "../data/turU13.js";
 import { TourMatrixU13 } from "../components/TourMatrixU13.jsx";
 
@@ -53,6 +65,35 @@ export default function StatsChUkU13Page() {
           standings={tur4U13}
           results={tur4}
           teams={teamsTur4}
+        />
+
+        <TourMatrixU13
+          title="Тур 5"
+          standings={tur5U13}
+          results={tur5}
+          teams={teamsTur5}
+        />
+
+
+        <TourMatrixU13
+          title="Тур 6"
+          standings={tur6U13}
+          results={tur6}
+          teams={teamsTur6}
+        />
+
+         <TourMatrixU13
+          title="Тур 7"
+          standings={tur7U13}
+          results={tur7}
+          teams={teamsTur7}
+        />
+
+         <TourMatrixU13
+          title="Тур 8"
+          standings={tur8U13}
+          results={tur8}
+          teams={teamsTur8}
         />
       </div>
     </section>
