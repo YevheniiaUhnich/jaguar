@@ -196,6 +196,11 @@ const rawPlayers = [
         src: "/video-athletes/GoalTorubara4.mp4",
         poster: "/video-athletes/posterTorubara4.png",
       },
+      {
+        src: "/video-athletes/GoalTorubara5.mp4",
+        poster: "/video-athletes/posterTorubara5.png",
+      },
+      
     ],
 
     stats: {
