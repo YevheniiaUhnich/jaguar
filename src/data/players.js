@@ -200,6 +200,11 @@ const rawPlayers = [
         src: "/video-athletes/GoalTorubara5.mp4",
         poster: "/video-athletes/posterTorubara5.png",
       },
+      {
+        src: "/video-athletes/GoalTorubara6.mp4",
+        poster: "/video-athletes/posterTorubara6.png",
+      },
+
       
     ],
 
